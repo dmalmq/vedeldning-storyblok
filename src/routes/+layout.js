@@ -3,6 +3,7 @@ import Feature from '../components/Feature.svelte';
 import Grid from '../components/Grid.svelte';
 import Hero from '../components/Hero.svelte';
 import Page from '../components/Page.svelte';
+import Produkt from '../components/Produkt.svelte';
 import Teaser from '../components/Teaser.svelte';
 
 /** @type {import('./$types').LayoutLoad} */
@@ -15,7 +16,8 @@ export async function load() {
 			grid: Grid,
 			page: Page,
 			teaser: Teaser,
-			hero: Hero
+			hero: Hero,
+			produkt: Produkt
 		}
 	});
 	let storyblokApi = await useStoryblokApi();
