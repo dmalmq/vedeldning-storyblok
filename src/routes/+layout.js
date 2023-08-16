@@ -1,4 +1,5 @@
 import { apiPlugin, storyblokInit, useStoryblokApi } from '@storyblok/svelte';
+import AllArticles from '../components/AllArticles.svelte';
 import Article from '../components/Article.svelte';
 import Feature from '../components/Feature.svelte';
 import Grid from '../components/Grid.svelte';
@@ -17,7 +18,8 @@ export async function load() {
 			page: Page,
 			teaser: Teaser,
 			hero: Hero,
-			article: Article
+			Article: Article,
+			'all-articles': AllArticles
 		}
 	});
 	let storyblokApi = await useStoryblokApi();
